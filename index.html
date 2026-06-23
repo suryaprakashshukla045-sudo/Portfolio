@@ -1,334 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya | Portfolio</title>
+    <meta name="description" content="Surya Prakash Shukla - Frontend Developer Portfolio">
+    <title>Surya Prakash Shukla | Portfolio</title>
 
     <link rel="stylesheet" href="portfolio.css">
-
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 </head>
 
 <body>
+    <!-- Loader -->
     <div id="loader">
         <div class="spinner"></div>
     </div>
 
     <!-- Navbar -->
     <header>
-        <nav>
-            <div class="logo">
-                Surya<span> Prakash Shukla</span>
-            </div>
+        <nav class="navbar">
+            <a href="#home" class="logo">Surya<span> Prakash Shukla</span></a>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div id="menu-btn">
+            <button id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-
+    <!-- Hero -->
     <section class="hero" id="home">
-
         <div class="hero-content">
-
-            <h3>Hello, I'm</h3>
-
+            <p class="hello-text">Hello, I'm</p>
             <h1>Surya Prakash Shukla</h1>
 
-            <h2>
-                <span id="typing"></span>
-            </h2>
+            <h2>I am a <span id="typing"></span></h2>
 
-            <p>
-                B.Tech Student at RR Group of Institutions.
-                Passionate about creating modern websites
-                using HTML, CSS and JavaScript.
+            <p class="hero-description">
+                B.Tech Student at RR Group of Institutions. Passionate about creating
+                modern, responsive websites using HTML, CSS and JavaScript.
             </p>
 
             <div class="hero-btns">
-                <a href="#contact" class="btn">
-                    Hire Me
-                </a>
-
-               <a href="resume.pdf" class="btn secondary" download>
-                    Download CV
-                    </a>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="resume.pdf" class="btn secondary" download>Download CV</a>
             </div>
 
             <div class="social-icons">
-
-                <a href="https://github.com/suryaprakashshukla045-sudo">
+                <a href="https://github.com/suryaprakashshukla045-sudo" target="_blank" rel="noopener" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
 
-                <a href="https://linkedin.com/in/surya-prakash-shukla-ba9b11398">
+                <a href="https://linkedin.com/in/surya-prakash-shukla-ba9b11398" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-
-                <a href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-
             </div>
-
         </div>
 
         <div class="hero-image">
             <div class="image-box">
-                <!-- apni image yahan lagana -->
-                <img src="SuryaProfile all.jpeg" alt="Profile" >
-
+                <img src="SuryaProfile all.jpeg" alt="Surya Prakash Shukla profile photo">
             </div>
-
         </div>
-
     </section>
 
     <!-- About -->
-
     <section class="about" id="about">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
+        <h2 class="section-title">About Me</h2>
 
         <div class="about-container">
-
-            <div class="about-card">
-
-                <h3>Who Am I ?</h3>
-
+            <article class="about-card reveal">
+                <i class="fas fa-user-graduate card-icon"></i>
+                <h3>Who Am I?</h3>
                 <p>
-                    I am a B.Tech student at
-                    RR Group of Institutions.
-
-                    I love building responsive websites
-                    and interactive web applications.
-
-                    Currently focusing on Frontend
-                    Development and JavaScript.
+                    I am a B.Tech student at RR Group of Institutions. I enjoy building
+                    responsive websites and interactive web applications. Currently,
+                    I am focusing on Frontend Development and JavaScript.
                 </p>
+            </article>
 
-            </div>
-
-            <div class="about-card">
-
+            <article class="about-card reveal">
+                <i class="fas fa-graduation-cap card-icon"></i>
                 <h3>Education</h3>
-
                 <p>
-                    Bachelor of Technology (B.Tech)
-
+                    <strong>Bachelor of Technology (B.Tech)</strong><br>
                     RR Group of Institutions
                 </p>
-
-            </div>
-
+            </article>
         </div>
-
     </section>
 
     <!-- Skills -->
-
     <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
 
-        <h2 class="section-title">
-            My Skills
-        </h2>
+        <div class="skill-box reveal">
+            <div class="skill">
+                <div class="skill-name"><span>HTML</span><span>95%</span></div>
+                <div class="progress"><div class="progress-bar html"></div></div>
+            </div>
 
-       <div class="skill-box">
+            <div class="skill">
+                <div class="skill-name"><span>CSS</span><span>90%</span></div>
+                <div class="progress"><div class="progress-bar css"></div></div>
+            </div>
 
-    <div class="skill">
-        <span>HTML</span>
-        <div class="progress">
-            <div class="progress-bar html"></div>
+            <div class="skill">
+                <div class="skill-name"><span>JavaScript</span><span>85%</span></div>
+                <div class="progress"><div class="progress-bar js"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name"><span>SQL</span><span>50%</span></div>
+                <div class="progress"><div class="progress-bar sql"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name"><span>Java</span><span>50%</span></div>
+                <div class="progress"><div class="progress-bar java"></div></div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="skill">
-        <span>CSS</span>
-        <div class="progress">
-            <div class="progress-bar css"></div>
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2 class="section-title">What I Do</h2>
+
+        <div class="service-grid">
+            <article class="service-card reveal">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>I build clean and responsive websites using HTML, CSS and JavaScript.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>I create websites that work smoothly on mobile, tablet and desktop screens.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Projects</h3>
+                <p>I build interactive frontend projects and keep improving my JavaScript skills.</p>
+            </article>
         </div>
-    </div>
-
-    <div class="skill">
-        <span>JavaScript</span>
-        <div class="progress">
-            <div class="progress-bar js"></div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <span>SQL</span>
-        <div class="progress">
-            <div class="progress-bar sql"></div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <span>Java</span>
-        <div class="progress">
-            <div class="progress-bar java"></div>
-        </div>
-    </div>
-
-</div>
-
     </section>
 
     <!-- Projects -->
-
     <section class="projects" id="projects">
-
-        <h2 class="section-title">
-            Projects
-        </h2>
+        <h2 class="section-title">My Projects</h2>
 
         <div class="project-grid">
-
-            <div class="project-card">
-
+            <article class="project-card reveal">
                 <div class="project-image">
-                    <img src="./real state.jpg">
+                    <img src="real state.jpg" alt="Real Estate project preview">
                 </div>
-
                 <div class="project-content">
-
-                    <h3>Real Estate</h3>
-
-                    <p>
-                        Modern Real Estate Project
-                    </p>
-
+                    <h3>Real Estate Website</h3>
+                    <p>A modern real estate website with a clean and responsive design.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="Real Estate GitHub code">Code <i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Real Estate live demo">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
+            </article>
 
-            </div>
-
-            <div class="project-card">
-
+            <article class="project-card reveal">
                 <div class="project-image">
-                    <img src="./calc.png">
+                    <img src="calc.png" alt="Calculator project preview">
                 </div>
-
                 <div class="project-content">
-
-                    <h3>Calaculator </h3>
-
-                    <p>
-                        JavaScript Calculator Project.
-                    </p>
-
+                    <h3>Calculator</h3>
+                    <p>A responsive calculator project built using JavaScript.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="Calculator GitHub code">Code <i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Calculator live demo">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
+            </article>
 
-            </div>
-
-            <div class="project-card">
-
+            <article class="project-card reveal">
                 <div class="project-image">
-                    <img src="./E commerce.jfif">
+                    <img src="E commerce.jfif" alt="E-commerce project preview">
                 </div>
-
                 <div class="project-content">
-
                     <h3>E-Commerce Website</h3>
-
-                    <p>
-                        E-commerce Using HTML ,CSS ,JS
-                    </p>
-
+                    <p>An e-commerce website made using HTML, CSS and JavaScript.</p>
+                    <div class="project-links">
+                        <a href="#" aria-label="E-commerce GitHub code">Code <i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="E-commerce live demo">Live Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-
-            </div>
-
+            </article>
         </div>
-
     </section>
 
     <!-- Contact -->
-
     <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
 
-        <h2 class="section-title">
-            Contact Me
-        </h2>
+        <!-- abc01@gmail.com ko apni real Gmail se replace karna -->
+        <form class="contact-form reveal" action="https://formsubmit.co/abc01@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
 
-       <form class="contact-form" action="https://formsubmit.co/abc01@gmail.com" method="POST">
+            <input type="text" name="_honey" class="hidden-input">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
 
-    <input type="text" name="name" placeholder="Your Name" required>
-
-    <input type="email" name="email" placeholder="Your Email" required>
-
-    <input type="text" name="subject" placeholder="Subject" required>
-
-    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-
-    <!-- Spam se bachne ke liye hidden field -->
-    <input type="text" name="_honey" style="display:none">
-
-    <!-- Message send hone ke baad user ko portfolio par wapas bhejega -->
-    <input type="hidden" name="_next" value="https://yourusername.github.io/#contact">
-
-    <button type="submit">
-        Send Message
-    </button>
-
-</form>
-
+            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
     </section>
 
     <!-- Footer -->
+    <footer>
+        <h3>Surya Prakash Shukla</h3>
+        <p>Frontend Developer | B.Tech Student</p>
 
-   <footer>
+        <!-- YOUR_EMAIL@gmail.com ko apni real Gmail se replace karna -->
+        <p class="footer-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:suryaprakashshukla045@gmail.com">suryaprakashshukla045@gmail.com</a>
+        </p>
 
-    <h3>Surya Prakash Shukla</h3>
+        <div class="footer-social">
+            <a href="https://github.com/suryaprakashshukla045-sudo" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
 
-    <p>Frontend Developer | B.Tech Student</p>
+            <a href="https://linkedin.com/in/surya-prakash-shukla-ba9b11398" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
 
-    <p>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:suryaprakashshukla@gmail.com">
-            suryaprakashshukla@gmail.com
-        </a>
-    </p>
+        <p class="copyright">© 2026 Surya Prakash Shukla. All Rights Reserved.</p>
+    </footer>
 
-    <div class="footer-social">
-
-        <a href="https://github.com/suryaprakashshukla045-sudo" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://linkedin.com/in/surya-prakash-shukla-ba9b11398" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-    </div>
-
-    <p class="copyright">
-        © 2026 Surya Prakash Shukla. All Rights Reserved.
-    </p>
-
-</footer>
+    <button id="scrollTopBtn" type="button" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="portfolio.js"></script>
-
 </body>
-
 </html>
