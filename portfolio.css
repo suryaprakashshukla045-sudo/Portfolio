@@ -260,14 +260,27 @@ section {
 .hero-image {
     display: flex;
     justify-content: center;
-}
-.image-box{
-    width: 380px;
-    height: 380px;
-    border-radius: 50%;
-    padding: 8px;
+}/* Hero Profile Image */
 
-    background: linear-gradient(
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:slideRight 1s ease;
+}
+
+.image-box{
+    width:380px;
+    max-width:80vw;
+    aspect-ratio:1 / 1;
+    flex-shrink:0;
+
+    border-radius:50%;
+    padding:8px;
+    overflow:hidden;
+
+    background:linear-gradient(
         45deg,
         cyan,
         #3b82f6,
@@ -275,12 +288,11 @@ section {
         cyan
     );
 
-    background-size: 300% 300%;
+    background-size:300% 300%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
     animation:
         borderMove 6s linear infinite,
@@ -288,23 +300,39 @@ section {
 }
 
 .image-box img{
-    width: 100%;
-    height: 100%;
-    display: block;
+    width:100%;
+    height:100%;
+    display:block;
 
-    object-fit: cover;
-    object-position: center top;
+    object-fit:cover;
+    object-position:center top;
 
-    border-radius: 50%;
-    border: 6px solid #0f172a;
+    border-radius:50%;
+    border:6px solid #0f172a;
 }
 
-@keyframes borderMove {
-    50% { background-position: 100% 50%; }
+@keyframes borderMove{
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
 }
 
-@keyframes floating {
-    50% { transform: translateY(-16px); }
+@keyframes floating{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-16px);
+    }
 }
 
 /* Cards */
